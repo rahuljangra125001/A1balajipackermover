@@ -1,0 +1,133 @@
+Scoped General Styles for Contact Section Only
+.inner-content-wrapper.contact-info-area {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+/* Main Heading */
+.inner-content-wrapper.contact-info-area h2 {
+    text-align: center;
+    font-weight: 700;
+    color: #007BFF;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Contact Information Section */
+.inner-content-wrapper.contact-info-area .contact-info-section {
+    padding: 20px;
+    font-weight: 500;
+    color: #555;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+}
+
+.inner-content-wrapper.contact-info-area .contact-info-section p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.inner-content-wrapper.contact-info-area .contact-info-section a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.inner-content-wrapper.contact-info-area .contact-info-section a:hover {
+    color: #0056b3;
+}
+
+/* Google Maps Button */
+.inner-content-wrapper.contact-info-area .btn-primary {
+    display: inline-block;
+    color: #fff;
+    background: #007BFF;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.inner-content-wrapper.contact-info-area .btn-primary:hover {
+    background: #0056b3;
+}
+
+/* Contact Form Section */
+.inner-content-wrapper.contact-info-area .contact-form-section {
+    padding: 20px;
+    font-weight: 500;
+    color: #555;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+}
+
+.inner-content-wrapper.contact-info-area .contact-form-section input[type="text"],
+.inner-content-wrapper.contact-info-area .contact-form-section input[type="email"],
+.inner-content-wrapper.contact-info-area .contact-form-section input[type="tel"],
+.inner-content-wrapper.contact-info-area .contact-form-section textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: 0.3s ease;
+}
+
+.inner-content-wrapper.contact-info-area .contact-form-section input:focus,
+.inner-content-wrapper.contact-info-area .contact-form-section textarea:focus {
+    border-color: #66afe9;
+    outline: none;
+}
+
+.inner-content-wrapper.contact-info-area .btn-primary[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.inner-content-wrapper.contact-info-area .btn-primary[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Flexbox Layout for Side-by-Side Sections */
+.inner-content-wrapper.contact-info-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .inner-content-wrapper.contact-info-area {
+        flex-direction: column;
+    }
+
+    .inner-content-wrapper.contact-info-area .btn-primary {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .inner-content-wrapper.contact-info-area .contact-info-section,
+    .inner-content-wrapper.contact-info-area .contact-form-section {
+        padding: 15px;
+    }
+}

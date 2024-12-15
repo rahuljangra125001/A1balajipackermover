@@ -1,0 +1,305 @@
+/* General body styling */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the form */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Section Header */
+h2 {
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Form Section */
+.request-quote-sec {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Form input fields */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea,
+button {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+/* Placeholder Text */
+input::placeholder,
+textarea::placeholder {
+    color: #aaa;
+}
+
+/* Form Button */
+button[type="submit"] {
+    background: linear-gradient(90deg, #ff9800, #ff5722);
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Button Hover Effect */
+button[type="submit"]:hover {
+    background: linear-gradient(90deg, #ff5722, #e64a19);
+}
+
+/* Service Checkboxes */
+.form-check {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px;
+    transition: background 0.3s ease;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.form-check:hover {
+    background: #f1f1f1;
+}
+
+.form-check-input {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+/* Service Labels and Images */
+.form-check-label {
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.form-check-label img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Service Label Hover Effect */
+.form-check-label:hover {
+    color: #ff5722;
+}
+
+/* Textarea Styling */
+textarea {
+    resize: vertical;
+    height: 120px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .request-quote-sec {
+        padding: 20px;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    textarea,
+    button {
+        font-size: 16px;
+    }
+
+    .form-check {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .form-check-label {
+        font-size: 14px;
+    }
+}
+
+/*
+================================================
+12. Request a Call Back Section
+================================================
+*/
+.request-quote-sec::before {
+	position: absolute;
+	content: '';
+	background: #0b0c26;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	opacity: .8;
+	z-index: -1;
+}
+
+.request-quote-sec {
+	background-image: url(../images/teastimonial-bg.jpg);
+	background-position: center center;
+	background-size: cover;
+	width: 100%;
+	height: auto;
+	position: relative;
+	z-index: 0;
+	background-attachment: fixed;
+}
+
+.request-quote-sec h6::after {
+	position: absolute;
+	content: "";
+	background: #f2343c;
+	height: 36px;
+	width: 36px;
+	border-radius: 50%;
+	left: -10px;
+	z-index: -1;
+	top: -4px;
+	animation: leftright 1s infinite alternate;
+	opacity: 0.5;
+}
+
+.request-quote-sec h6 {
+	position: relative;
+	color: #fff;
+	margin: 0 0 30px;
+	font-size: 16px;
+	line-height: 26px;
+}
+
+.request-quote-sec h2 {
+	font-size: 42px;
+	line-height: 48px;
+	color: #fff;
+	font-weight: 700;
+}
+
+.request-quote-sec .form-control {
+	box-shadow: none;
+	outline: none;
+	border: 1px solid #dfdce6;
+	background: #fff;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	font-family: "Poppins", sans-serif;
+	color: #243b60;
+	height: auto;
+	padding: 20px;
+	resize: none;
+	min-width: 100%;
+	height: 56px;
+}
+
+select {
+	width: 268px;
+	padding: 5px;
+	font-size: 16px;
+	line-height: 1;
+	border: 0;
+	border-radius: 5px;
+	height: 34px;
+	background: url(../images/down-arrow.png) no-repeat right #ddd;
+	-webkit-appearance: none;
+	background-position-x: 96%;
+}
+
+.request-quote-sec .custom-select-categories {
+	background-color: #fff;
+	color: #243b60;
+	height: 56px;
+	width: 100%;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px 15px;
+	border: 1px solid #dfdce6;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	box-shadow: none;
+}
+
+/* leftright animation */
+.leftright {
+	animation: leftright 1s infinite alternate;
+}
+
+@-webkit-keyframes leftright {
+	0% {
+		-webkit-transform: translateX(-10px);
+		-moz-transform: translateX(-10px);
+		-ms-transform: translateX(-10px);
+		-o-transform: translateX(-10px);
+		transform: translateX(-10px);
+	}
+
+	100% {
+		-webkit-transform: translateX(40px);
+		-moz-transform: translateX(40px);
+		-ms-transform: translateX(40px);
+		-o-transform: translateX(40px);
+		transform: translateX(40px);
+	}
+}
+
+@keyframes rotateInfinit {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	25% {
+		transform: rotate(45deg);
+	}
+
+	50% {
+		transform: rotate(90deg);
+	}
+
+	75% {
+		transform: rotate(135deg);
+	}
+
+	100% {
+		transform: rotate(180deg);
+	}
+}
+
+@keyframes spinInfinit {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}

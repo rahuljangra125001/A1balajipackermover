@@ -1,0 +1,112 @@
+  .service_item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .service_icon_wrapper {
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .service_icon_wrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+    border-radius: 12px;
+  }
+  
+  .service_icon_wrapper img:hover {
+    transform: scale(1.1);
+  }
+  
+  
+  .service_title a:hover {
+    color: #007BFF;
+  }
+  
+  /* Read More Link */
+  .read-more-btn {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: text-decoration 0.3s ease;
+  }
+  
+  .read-more-btn:hover {
+    text-decoration: underline;
+  }
+  
+  /* General Service Styling */
+.service_item {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    transform-origin: center;
+    max-width: 350px;
+    transition: max-height 0.5s ease-in-out;
+}
+
+/* Service Details (Hidden Section) */
+.service-details {
+    padding-top: 15px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.service-details ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.service-details li {
+    font-weight: 500;
+}
+
+/* Hidden Section Effect */
+.hidden {
+    max-height: 0;
+    opacity: 0;
+    display: none;
+}
+
+/* Animation Effect to Expand Service Details */
+.service-details.expanded {
+    max-height: 500px; /* Smoothly expands with height */
+    opacity: 1;
+    display: block;
+}
+
+/* Service Item Hover Effect */
+.service_item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Button Animation */
+.read-more-btn {
+    color: #007BFF;
+    font-weight: bold;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
+}
+
+.read-more-btn:hover {
+    text-decoration: underline;
+}

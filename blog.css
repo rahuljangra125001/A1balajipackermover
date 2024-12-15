@@ -1,0 +1,153 @@
+/* Blog Section */
+.py-5 {
+    background: linear-gradient(135deg, #f0f4f8, #e9ecef);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* Blog Section Title */
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-weight: 700;
+    color: #004085;
+    font-size: 36px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.section-title h5 {
+    font-weight: 500;
+    color: #007bff;
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+/* Blog Card */
+.card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Hover Effect on Card */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(135deg, #e0f7fa, #e3f2fd);
+}
+
+/* Blog Image */
+.card-img-top {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Image Hover Effect */
+.card-img-top:hover {
+    transform: scale(1.1);
+}
+
+/* Card Body */
+.card-body {
+    padding: 15px;
+}
+
+/* Meta Information */
+.list-inline-item {
+    font-size: 14px;
+    color: #888;
+    display: flex;
+    align-items: center;
+}
+
+/* Icon Color */
+.list-inline-item i {
+    color: #007bff;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+/* Blog Title */
+.card-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #222;
+    margin: 10px 0;
+    line-height: 1.4;
+    text-align: center;
+}
+
+/* Title Hover Effect */
+.card-title a:hover {
+    color: #ff9800;
+    text-decoration: none;
+}
+
+/* Description Text */
+.card-body p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Link Animation */
+.line-animation {
+    color: #007bff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    font-weight: 500;
+}
+
+.line-animation:hover {
+    transform: translateX(5px);
+    color: #ff9800;
+}
+
+/* Smooth Card Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Grid */
+@media (max-width: 992px) {
+    .col-md-6, .col-lg-4 {
+        padding: 15px;
+    }
+    .card {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title h2 {
+        font-size: 28px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .list-inline-item {
+        font-size: 12px;
+    }
+}

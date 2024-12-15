@@ -1,0 +1,154 @@
+/* Introduction Section */
+.introduction-section {
+    padding: 80px 0;
+    background: #f0f4f8;
+    overflow: hidden;
+}
+
+/* Section Title with 3D Effect */
+.sec-title .title {
+    font-weight: 600;
+    color: #007BFF;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 5px rgba(0, 123, 255, 0.5);
+    transition: 0.3s ease;
+}
+
+.sec-title h2 {
+    font-weight: 700;
+    font-size: 36px;
+    color: #222;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    transform: rotateY(5deg);
+    transition: transform 0.5s ease;
+}
+
+.sec-title h2:hover {
+    transform: rotateY(15deg) rotateX(10deg);
+}
+
+/* Image Column */
+.image-column .image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: 0.5s ease;
+    transform-origin: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.image-column .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease;
+}
+
+.image-column .projects {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 8px 12px;
+    font-weight: bold;
+    border-radius: 12px;
+    font-size: 20px;
+}
+
+/* 3D Effect on Hover */
+.image-column:hover .image {
+    transform: scale(1.05) rotateY(10deg) rotateX(10deg);
+    box-shadow: 0 0 30px rgba(0, 123, 255, 0.7);
+}
+
+/* Content Column */
+.content-column .text p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #555;
+    transition: color 0.3s ease, transform 0.3s ease;
+    transform-origin: center;
+}
+
+.content-column .text p:hover {
+    color: #222;
+    transform: scale(1.02) rotateY(3deg);
+}
+
+.content-column .list-style-three {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.content-column .list-style-three li {
+    font-weight: bold;
+    font-size: 18px;
+    background: #e7f3fe;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
+    transition: 0.3s ease;
+    text-align: center;
+    transform-origin: center;
+}
+
+.content-column .list-style-three li:hover {
+    background: #b6ecff;
+    transform: scale(1.1) rotateY(5deg);
+}
+
+/* Enquire Button */
+.theme-btn.bttn {
+    background: linear-gradient(90deg, #007BFF, #0056b3);
+    color: #fff;
+    padding: 15px 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    transition: 0.5s ease;
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.6);
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.theme-btn.bttn:hover {
+    background: linear-gradient(90deg, #0056b3, #004494);
+    transform: scale(1.05) rotateY(3deg);
+    box-shadow: 0 0 30px rgba(0, 123, 255, 0.9);
+}
+
+/* 3D Button Text Effect */
+.theme-btn.bttn span {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.theme-btn.bttn:hover span {
+    transform: translateX(5px) rotateY(10deg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .introduction-section .image-column,
+    .introduction-section .content-column {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .theme-btn.bttn {
+        padding: 15px;
+        font-size: 20px;
+    }
+}

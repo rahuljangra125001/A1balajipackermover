@@ -1,0 +1,105 @@
+/* Header Top Section */
+.header-top {
+    background: linear-gradient(90deg, #0d6efd, #004085);
+    color: #ffffff;
+    padding: 5px 0; /* Reduced padding for a tighter fit */
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header-top a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.header-top a:hover {
+    color: #ffc107;
+    text-decoration: underline;
+}
+
+/* Header Left and Right Lists */
+.header-top .header-top-left ul,
+.header-top .header-top-right ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Reduced spacing for a more compact look */
+}
+
+.header-top .header-top-left ul li,
+.header-top .header-top-right ul li {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.header-top .header-top-left ul li i,
+.header-top .header-top-right ul li i {
+    font-size: 12px; /* Smaller icon size for a compact fit */
+    color: #ffc107;
+    margin-right: 8px;
+}
+
+.header-top .header-top-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Social Media Icons */
+.header-top .header-top-right ul li a {
+    font-size: 18px;
+    color: #ffffff;
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.header-top .header-top-right ul li a:hover {
+    transform: scale(1.2);
+    color: #ffc107;
+}
+
+.header-top .header-top-right ul li:not(:last-child) {
+    margin-right: 12px;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+    .header-top .header-top-right {
+        display: none; /* Hide social icons on smaller screens */
+    }
+
+    .header-top .header-top-item {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .header-top .header-top-left ul {
+        flex-wrap: wrap;
+    }
+
+    .header-top .header-top-left ul li {
+        margin-right: 10px;
+        margin-bottom: 2px;
+    }
+}
+
+@media (max-width: 575px) {
+    .header-top {
+        font-size: 13px;
+        padding: 2px 0; /* More compact padding */
+    }
+
+    .header-top .header-top-left ul li i {
+        font-size: 10px;
+    }
+
+    .header-top .header-top-left ul li {
+        font-size: 10px; /* Smaller text for compact fit */
+    }
+}
